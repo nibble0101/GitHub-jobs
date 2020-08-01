@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+   --header-bg-color: #242527;
+   --footer-bg-color: #242527;
+   --body-bg-color: #18191b;
+   --box-bg-color: #2a2d3e;
+   --link-color: #7481a3;
+   --link-hover-color: rgb(32, 146, 93);
+   --body-text-color: whitesmoke;
+
+}
+body {
+  background-color: var(--body-bg-color);
+  font-family: 'Roboto', sans-serif;
+  color: var(--body-text-color);
+}
+.header {
+  background-color: var(--header-bg-color);
+  padding: 1em;
+  text-align: center;
+}
+.job-wrapper {
+  padding: 0 1em;
+ 
+}
+.job-wrapper h2{
+  font-weight: 100;
+  text-align: center;
+  color: whitesmoke;
+
+}
+.main-section{
+  min-height: 100vh;
+  width: 70%;
+  margin: 0 auto;
+ 
+}
+.job-details{
+  width: 70%;
+  margin: auto;
+  max-width: 600px;
+  text-align: justify;
+  padding: 1em;
+}
+.job-highlights{
+  background-color: var(--box-bg-color);
+  padding: 1em;
+  margin-top: 1em;
+  color: whitesmoke;
+}
+.label{
+  color: yellowgreen;
+  text-transform: uppercase
+}
+
+a{
+  text-decoration: none;
+  color: var(--link-color);
+  transform: color 500ms linear;
+  cursor: pointer;
+}
+a:hover{
+  color: var(--link-hover-color);
+}
+.main-link{
+  text-align: center;
+  
+}
+.main-link a{
+  color: wheat;
+}
+.footer{
+  background-color: var(--footer-bg-color);
+  color: whitesmoke;
+  padding: 1em;
+}
+.footer p{
+  text-align: center
+}
+.footer a{
+  color: green
+}
