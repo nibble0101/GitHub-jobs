@@ -105,3 +105,10 @@ a:hover{
 .footer a{
   color: green
 }
+
+
+@media screen and  (max-width: 700px){
+   .main-section, .job-details{
+       width: 90%;
+   }
+}
