@@ -1,5 +1,6 @@
 import React from "react";
 import JobHighlights from "./JobHighlights";
+import LoadMore from "./LoadMore";
 import MainLink from "./MainLink";
 
 export default function JobDisplay(props) {
@@ -15,11 +16,13 @@ export default function JobDisplay(props) {
               location={job.location}
               title={job.title}
               created_at = {job.created_at}
+              company_url = {job.company_url}
             />
             <MainLink company = {job.company} title = {job.title} job = {job} />
           </div>
         );
       })}
+      <LoadMore />
     </React.Fragment>
   );
 }

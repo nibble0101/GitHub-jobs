@@ -12,7 +12,7 @@ export default function JobHighlights(props) {
           </p>
           <p className="company-name">
             <span className="label"> Company: </span>
-            <a href={props.company_url}> {props.company} </a>
+            <a href={props.company_url} target = "_blank" rel="noreferrer nofollow"> {props.company} </a>
           </p>
           <p className="company-location">
             <span className="label"> Location: </span> {props.location}
