@@ -3,6 +3,7 @@ import JobSummary from "./display/JobSummary";
 import Loader from "./Loader";
 const jobsUrl = "https://jobs.github.com/positions.json";
 const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+
 export default function Main() {
   const [jobs, setJobs] = useState([]);
   const [isError, setIsError] = useState(false);
@@ -26,8 +27,8 @@ export default function Main() {
       {!isError && !isLoading && <JobSummary jobs={jobs} />}
       {isLoading && !isError && <Loader />}
       {isError && (
-        <p style={{ textAlign: "center", color: "green" }}>
-          Can't retrieve data at the moment!
+        <p className = "error-message">
+          Can't retrieve data at the moment! <span role = "img" aria-label = "crying emoji">😭</span>
         </p>
       )}
     </section>

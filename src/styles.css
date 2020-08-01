@@ -40,7 +40,17 @@ body {
   min-height: 100vh;
   width: 70%;
   margin: 0 auto;
+  position: relative;
  
+}
+.error-message{
+    text-align: center;
+    position: absolute;
+    color: green;
+    font-size: 1em;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .job-details{
   width: 70%;
@@ -55,9 +65,16 @@ body {
   margin-top: 1em;
   color: whitesmoke;
 }
+
+.job-description p{
+    padding: 0.5em 0;
+}
+.job-description li{
+    margin-left: 1em;
+}
 .label{
   color: yellowgreen;
-  text-transform: uppercase
+  text-transform: capitalize;
 }
 
 a{
@@ -80,6 +97,7 @@ a:hover{
   background-color: var(--footer-bg-color);
   color: whitesmoke;
   padding: 1em;
+  margin-top: 1em;
 }
 .footer p{
   text-align: center

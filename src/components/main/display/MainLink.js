@@ -14,7 +14,7 @@ export default function MainLink(props) {
         }}
       >
         <span role="img" aria-label="link">
-          Detailed Job Description 🔗
+        🔗Detailed Job Description 
         </span>
       </Link>
     </div>

@@ -1,11 +1,13 @@
 import React from "react";
-import "./Loader.css"
+import "./Loader.css";
 export default function Loader() {
   return (
-    <div className="lds-roller">
-      <div />
-      <div />
-      <div />
+    <div className = "loader-wrapper">
+      <div className="lds-roller">
+        <div />
+        <div />
+        <div />
+      </div>
     </div>
   );
 }
