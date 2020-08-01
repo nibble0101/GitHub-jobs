@@ -7,6 +7,7 @@ export default function Footer() {
       <p className="source">
         Source: <a href="https://jobs.github.com/"> GitHub Jobs </a>
       </p>
+      <p> Coded by: <a href = "https://github.com/nibble0101"> Joseph Mawa </a></p>
     </footer>
   );
 }
