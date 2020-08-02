@@ -3,7 +3,7 @@ import React from "react";
 export default function LoadMore(props) {
   return (
     <div className="button-wrapper">
-      <button> Load More Jobs... </button>
+      <button onClick = {props.pageHandle}> Load more jobs... </button>
     </div>
   );
 }

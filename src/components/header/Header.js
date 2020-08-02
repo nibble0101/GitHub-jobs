@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 export default function Header() {
   return (
@@ -9,18 +10,7 @@ export default function Header() {
         </a>
       </p>
       <h1 className="header-text"> GitHub Jobs </h1>
-      <p className="social-media">
-        Share on:
-        <a href = "https://www.facebook.com/">
-          <i className="fa fa-facebook" aria-hidden="true"></i>
-        </a>
-        <a href = "https://twitter.com/?lang=en">
-          <i className="fa fa-twitter" aria-hidden="true"></i>
-        </a>
-        <a href = "https://www.whatsapp.com/">
-          <i className="fa fa-whatsapp" aria-hidden="true"></i>
-        </a>
-      </p>
+     <p> <Link to = "/other"> Other Jobs </Link> </p>
     </header>
   );
 }

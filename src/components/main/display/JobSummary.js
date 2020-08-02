@@ -22,7 +22,7 @@ export default function JobDisplay(props) {
           </div>
         );
       })}
-      <LoadMore />
+      {!props.isLastPage && <LoadMore pageHandle = {props.pageHandle} />}
     </React.Fragment>
   );
 }

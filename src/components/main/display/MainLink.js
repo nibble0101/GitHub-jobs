@@ -16,7 +16,7 @@ export default function MainLink(props) {
           }}
         >
           <span role="img" aria-label="link">
-            🔗Detailed Job Description
+          <i class="fa fa-link" aria-hidden="true"></i> Detailed Job Description
           </span>
         </Link>
       </div>
